@@ -12,7 +12,7 @@ git clone --recurse-submodules https://github.com/San7o/ebpf-lab.git
 
 - [Kubernetes operator using and XDP eBPF program do dump HTTP
   headers](https://github.com/dynatrace-oss/ebpf-dump) (I wrote this even if it
-  is not on my github profile):)
+  is not on my github profile)
 
 - [eBPF loader using go](https://github.com/San7o/go-ebpf)
 
