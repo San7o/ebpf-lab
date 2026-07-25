@@ -2,8 +2,31 @@
 
 Here I experiment with various eBPF programs and observability tools.
 
-```
+```bash
 git clone --recurse-submodules https://github.com/San7o/ebpf-lab.git
+```
+
+Build an eBPF program and its loader:
+
+- Traffic Control
+
+```bash
+make PROG_TC=1
+sudo ./tc/tc
+```
+
+- XDP
+
+```bash
+make PROG_XDP=1
+sudo ./xdp/xdp
+```
+
+- Tracepoint
+
+```bash
+make
+sudo ./tp/tp
 ```
 
 ## My other experiments
