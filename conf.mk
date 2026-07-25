@@ -1,5 +1,7 @@
 ifeq (${PROG_XDP},1)
 	include xdp/conf.mk
+else ifeq (${PROG_TC},1)
+	include tc/conf.mk
 else
 	# Default
 	include tp/conf.mk
