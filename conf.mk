@@ -1,10 +1,17 @@
-include tp/conf.mk
+ifeq (${PROG_XDP},1)
+	include xdp/conf.mk
+else
+	# Default
+	include tp/conf.mk
+endif
 
 BPFTOOL_SRC = bpftool
 LIBBPF_SRC  = libbpf
 
 CC      = clang
-CFLAGS  = -Wall -Wextra -Werror -Wno-unused-parameter -I vmlinux
+CFLAGS  = -Wall -Wextra -Werror -I vmlinux
+CFLAGS += -Wno-unused-variable
+CFLAGS += -Wno-unused-parameter
 # Set the architecture for vmlinux
 CFLAGS += -D__TARGET_ARCH_$(ARCH)
 # This makes it easier for the verifier to verify the program
