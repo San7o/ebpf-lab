@@ -22,7 +22,14 @@ make PROG_XDP=1
 sudo ./xdp/xdp
 ```
 
-- `sched_ext`
+- LSM
+
+```bash
+make PROG_LSM=1
+sudo ./lsm/lsm
+```
+
+- `sched_ext` (TODO: test)
 
 ```bash
 make PROG_SCX=1

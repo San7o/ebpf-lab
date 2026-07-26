@@ -4,6 +4,8 @@ else ifeq (${PROG_TC},1)
 	include tc/conf.mk
 else ifeq (${PROG_SCX},1)
 	include sched_ext/conf.mk
+else ifeq (${PROG_LSM},1)
+	include lsm/conf.mk
 else
 	# Default
 	include tp/conf.mk
