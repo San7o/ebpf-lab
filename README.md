@@ -45,3 +45,6 @@ sudo ./tp/tp
 
 - [eBPF loader using go](https://github.com/San7o/go-ebpf)
 
+Good examples:
+
+- [libbpf-bootstrap](https://github.com/libbpf/libbpf-bootstrap/tree/master)
