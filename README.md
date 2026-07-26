@@ -29,6 +29,13 @@ make PROG_LSM=1
 sudo ./lsm/lsm
 ```
 
+- Task iter
+
+```bash
+make PROG_TASK_ITER=1
+sudo ./task_iter/task_iter
+```
+
 - `sched_ext` (TODO: test)
 
 ```bash
