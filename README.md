@@ -1,6 +1,6 @@
 # ebpf-lab
 
-Here I experiment with various eBPF programs and observability tools.
+Lab to experiment with various eBPF programs and observability tools.
 
 ```bash
 git clone --recurse-submodules https://github.com/San7o/ebpf-lab.git
@@ -22,6 +22,12 @@ make PROG_XDP=1
 sudo ./xdp/xdp
 ```
 
+- `sched_ext`
+
+```bash
+make PROG_SCX=1
+sudo ./sched_ext/sched_ext_simple
+```
 - Tracepoint
 
 ```bash

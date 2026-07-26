@@ -2,6 +2,8 @@ ifeq (${PROG_XDP},1)
 	include xdp/conf.mk
 else ifeq (${PROG_TC},1)
 	include tc/conf.mk
+else ifeq (${PROG_SCX},1)
+	include sched_ext/conf.mk
 else
 	# Default
 	include tp/conf.mk
@@ -14,6 +16,7 @@ CC      = clang
 CFLAGS  = -Wall -Wextra -Werror -I vmlinux
 CFLAGS += -Wno-unused-variable
 CFLAGS += -Wno-unused-parameter
+CFLAGS += -Wno-visibility
 # Set the architecture for vmlinux
 CFLAGS += -D__TARGET_ARCH_$(ARCH)
 # This makes it easier for the verifier to verify the program
